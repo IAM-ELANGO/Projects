@@ -2,7 +2,7 @@ import requests
 
 def scan(target_url):
     # Payload for SQL injection
-    payload = "' or '1'='1" or "elangovans02122005"
+    payload = "' or '1'='1"
     
     # Inject payload into URL query parameter
     url = f"{target_url}?id={payload}"
